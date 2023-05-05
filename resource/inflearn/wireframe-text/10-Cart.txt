@@ -1,0 +1,38 @@
+.container.cart
+    .cart-inner
+        .main-header
+            [common gnb component]
+
+        .cart-content
+            .cart-list-outer
+                .cart-list-title
+                    h3, button.btn-all-clear
+                .cart-list
+                    (
+                    .cart-item
+                        .title
+                            input[type=checkbox]
+                            b
+                            button.btn-clear
+                        .desc
+                            .cart-item-thum
+                                img
+                            .cart-item-info
+                                span.arrive-time
+                                span.order-time
+                                span.price
+                                span.benefit
+                                    (em > font-icon) * 2
+                                select                                
+                    ) * 2
+
+            .cart-item-info
+                (div > span * 2) * 4
+
+            button.cart-product-order
+
+            ul.cart-notice
+                li * 3
+
+        .gnb
+            [common gnb component]

@@ -1,0 +1,22 @@
+.container.category
+    .category-inner
+        .main-header
+            [common gnb component]
+
+        .category-content
+            .category-accordian
+                .category-title
+                .category-detail > a * n
+                .category-title
+                .category-detail > a * n
+                .category-title
+                .category-detail > a * n
+                .category-title
+                .category-detail > a * n
+                .category-title
+                .category-detail > a * n
+
+        .gnb
+            [common gnb component]
+
+            

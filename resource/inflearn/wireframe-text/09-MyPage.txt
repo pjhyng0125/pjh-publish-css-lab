@@ -1,0 +1,42 @@
+.container.mypage
+    .mypage-inner
+        .main-header
+            [common gnb component]
+
+        .mypage-content
+            .profile
+                .user-img
+                    img
+                .user-summary
+                    .rating
+                        .badge, .confirm > a, font-icon
+                    h2
+                    .benefit
+                        button.point
+                            span * 2
+                        button.coupon
+                            span * 2
+
+            .delivery-product
+                h2
+                .delivery-product-list
+                    (
+                    .item
+                        .thum
+                            img
+                        .detail
+                            span, b
+                    ) * 2
+
+            .friend-event-banner
+                a > img
+
+            .mypage-menu-list
+                (a > font-icon, span) * 8
+
+            button.btn-logout
+
+        .gnb
+            [common gnb component]
+
+            

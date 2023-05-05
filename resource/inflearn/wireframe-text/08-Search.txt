@@ -1,0 +1,32 @@
+.container.search
+    .search-inner
+        .main-header
+            [common gnb component]
+
+        .search-content
+            .search-field
+                input[type=search]
+                    font-icon
+                    span.search-txt
+
+            .search-recent
+                .title
+                    h3, button.btn-all-remove
+                .search-recent-list
+                    .item
+                        span, button.btn-clear > font-icon
+                    .item
+                        span, button.btn-clear > font-icon
+                    .item
+                        span, button.btn-clear > font-icon
+                
+            .search-soar
+                .title
+                    h3, p
+                ul.search-soar-list
+                    li * 7
+
+        .gnb
+            [common gnb component]
+
+            
