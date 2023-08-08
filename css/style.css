@@ -21,7 +21,7 @@ body {
   position: relative;
 }
 .preloading,
-.signin,
+.login,
 .signup {
   height: 100vh;
 }
@@ -54,10 +54,10 @@ body {
 .gnb a {
   text-align: center;
   /* border: 1px solid red; */
-  flex: 1;
+  flex: 1;  /* 이미지 너비에 상관없이 동일한 영역 차지해라 */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;  /* 정확한 수직을 위한 속성 */
 }
 .gnb a .bi {
   font-size: 22px;
@@ -133,10 +133,10 @@ body {
   transform: translate(-50%, -50%); */
 }
 /* Content Padding */
-/* .signin-content,
+.login-content,
 .signup-content {
-  padding: 20px;
-} */
+  padding: 0px;
+}
 
 /* Clear Buttons */
 .btn-all-clear {
@@ -273,42 +273,42 @@ body {
   font-weight: bold;
 }
 
-/* #### Signin html #### */
-.signin {
+/* #### login html #### */
+.login {
   height: 750px;
 }
-.signin-inner {}
-.signin-photo {
-  height: 250px;
-  background: url('/images/signin-header.jpg') no-repeat;
+.login-inner {}
+.login-photo {
+  height: 230px;
+  background: url('/images/login-header.jpg') no-repeat;
 }
-.sign-header {
+.login-header {
   text-align: center;
 }
-.sign-header .logo {
+.login-header .logo {
   font-size: 26px;
   margin-bottom: 0;
 }
-.sign-header p {
+.login-header p {
   font-size: 16px;
   font-weight: 400;
 }
-.signin-field {}
-.signin-field input {
+.login-field {}
+.login-field input {
   border: 1px solid var(--gainsboro);
   padding: 10px 20px;
   width: 100%;
   border-radius: 30px;
   margin: 5px 0;
 }
-.signin-field input:focus {
+.login-field input:focus {
   border-color: var(--yellowgreen);
 }
-.signin-field input::placeholder {
+.login-field input::placeholder {
   color: var(--silver-gray);
   transition: 0.35s;
 }
-.signin-field input:focus::placeholder {
+.login-field input:focus::placeholder {
   opacity: 0;
   /* visibility: hidden; */
 }
@@ -317,10 +317,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.custom-chk label input[type=checkbox] {
+.status label input[type=checkbox] {
   display: none;
 }
-.custom-chk label input[type=checkbox]  + em {
+.status label input[type=checkbox]  + em {
   /* border: 1px solid #000; */
   width: 16px;
   height: 16px;
@@ -328,7 +328,7 @@ body {
   transform: translateY(5px);
   margin-right: 3px;
 }
-.custom-chk label input[type=checkbox] + em:before {
+.status label input[type=checkbox] + em:before {
   content: '\F26B';
   font-family: bootstrap-icons;
   font-style: normal;
@@ -336,10 +336,10 @@ body {
   transform: translateY(-3px);
   display: inline-block;
 }
-.custom-chk label input[type=checkbox]:checked + em:before {
+.status label input[type=checkbox]:checked + em:before {
   color: var(--crimson);
 }
-.btn-signin {
+.btn-login {
   background-color: var(--yellowgreen);
 }
 .join-member {
@@ -349,10 +349,10 @@ body {
 .join-member a {
   text-decoration: underline;
 }
-.easy-signin {
+.easy-login {
   text-align: center;
 }
-.easy-signin span {
+.easy-login span {
   color: var(--light-gray);
 }
 .social-btn {

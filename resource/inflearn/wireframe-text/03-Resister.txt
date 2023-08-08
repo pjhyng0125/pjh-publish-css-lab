@@ -4,7 +4,7 @@
             button.btn-back > font-icon
             h2.logo
             .user-alarm
-                font-icon, em
+                sapn > font-icon, em
 
         .signup-content
             .signup-field
