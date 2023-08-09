@@ -21,7 +21,7 @@ body {
   position: relative;
 }
 .preloading,
-.login,
+.signin,
 .signup {
   height: 100vh;
 }
@@ -54,10 +54,10 @@ body {
 .gnb a {
   text-align: center;
   /* border: 1px solid red; */
-  flex: 1;  /* 이미지 너비에 상관없이 동일한 영역 차지해라 */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* 정확한 수직을 위한 속성 */
+  justify-content: center;
 }
 .gnb a .bi {
   font-size: 22px;
@@ -133,10 +133,10 @@ body {
   transform: translate(-50%, -50%); */
 }
 /* Content Padding */
-.login-content,
+/* .signin-content,
 .signup-content {
-  padding: 0px;
-}
+  padding: 20px;
+} */
 
 /* Clear Buttons */
 .btn-all-clear {
@@ -262,7 +262,7 @@ body {
 .heading-preloading .logo {
   font-size: 32px;
   color: var(--crimson);
-  white-space: nowrap;  /* 줄 안 바꾸겠다! */
+  white-space: nowrap;
 }
 .slogan {}
 .slogan span {
@@ -273,42 +273,42 @@ body {
   font-weight: bold;
 }
 
-/* #### login html #### */
-.login {
+/* #### Signin html #### */
+.signin {
   height: 750px;
 }
-.login-inner {}
-.login-photo {
-  height: 230px;
-  background: url('/images/login-header.jpg') no-repeat;
+.signin-inner {}
+.signin-photo {
+  height: 250px;
+  background: url('/images/signin-header.jpg') no-repeat;
 }
-.login-header {
+.sign-header {
   text-align: center;
 }
-.login-header .logo {
+.sign-header .logo {
   font-size: 26px;
   margin-bottom: 0;
 }
-.login-header p {
+.sign-header p {
   font-size: 16px;
   font-weight: 400;
 }
-.login-field {}
-.login-field input {
+.signin-field {}
+.signin-field input {
   border: 1px solid var(--gainsboro);
   padding: 10px 20px;
   width: 100%;
   border-radius: 30px;
   margin: 5px 0;
 }
-.login-field input:focus {
+.signin-field input:focus {
   border-color: var(--yellowgreen);
 }
-.login-field input::placeholder {
+.signin-field input::placeholder {
   color: var(--silver-gray);
   transition: 0.35s;
 }
-.login-field input:focus::placeholder {
+.signin-field input:focus::placeholder {
   opacity: 0;
   /* visibility: hidden; */
 }
@@ -317,10 +317,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.status label input[type=checkbox] {
+.custom-chk label input[type=checkbox] {
   display: none;
 }
-.status label input[type=checkbox]  + em {
+.custom-chk label input[type=checkbox]  + em {
   /* border: 1px solid #000; */
   width: 16px;
   height: 16px;
@@ -328,7 +328,7 @@ body {
   transform: translateY(5px);
   margin-right: 3px;
 }
-.status label input[type=checkbox] + em:before {
+.custom-chk label input[type=checkbox] + em:before {
   content: '\F26B';
   font-family: bootstrap-icons;
   font-style: normal;
@@ -336,10 +336,10 @@ body {
   transform: translateY(-3px);
   display: inline-block;
 }
-.status label input[type=checkbox]:checked + em:before {
+.custom-chk label input[type=checkbox]:checked + em:before {
   color: var(--crimson);
 }
-.btn-login {
+.btn-signin {
   background-color: var(--yellowgreen);
 }
 .join-member {
@@ -349,10 +349,10 @@ body {
 .join-member a {
   text-decoration: underline;
 }
-.easy-login {
+.easy-signin {
   text-align: center;
 }
-.easy-login span {
+.easy-signin span {
   color: var(--light-gray);
 }
 .social-btn {
